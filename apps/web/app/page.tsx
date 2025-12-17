@@ -1,6 +1,5 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
-import { Finding, FindingSchema } from "@repo/shared";
 import styles from "./page.module.css";
 
 type Props = Omit<ImageProps, "src"> & {
