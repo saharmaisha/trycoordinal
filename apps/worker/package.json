@@ -6,14 +6,20 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "dev": "tsc --watch"
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "@repo/shared": "*"
+    "@repo/db": "*",
+    "@repo/shared": "*",
+    "dotenv": "^16.3.1",
+    "pdfjs-dist": "^4.0.379",
+    "sharp": "^0.33.5",
+    "canvas": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
+    "tsx": "^4.7.0",
     "typescript": "5.9.2"
   }
 }
-
